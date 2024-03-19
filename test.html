@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preload" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <link rel="stylesheet" href="popup-form.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+    <header>
+        <div class="container mw-full px-15 px-lg-50">
+            <div class="row">
+                <div class="col-11 col-md-7 col-xl-5 col-left d-flex align-items-center">
+                                        <a href="" class="logo-header">
+                        <img data-src="assets/css/img/logo-header-min.png" alt="Les Maisons du Petit Nicolas" class="lazy">
+                    </a>
+                                        <div class="contact-bloc">
+                        <div class="inner">
+                            <span class="mr-15"><i class="las la-phone"></i> <a href="tel:+32 (0) 71 95 10 63">+32 (0) 71 95 10 63</a></span>
+                            <span><i class="las la-envelope"></i> <a href="mailto:info@lesmaisonsdupetitnicolas.be">info@lesmaisonsdupetitnicolas.be</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1 col-md-5 col-xl-7 d-flex justify-content-end">
+                    <div class="nav-desktop">
+                        <nav>
+                            
+
+
+
+
+
+                    <ul><li class="menudepth0 first_child menuactive"><a class=" menuactive" href="https://www.lesmaisonsdupetitnicolas.be/"><span>Accueil</span></a></li><li class="menudepth0 parent"><a class=" parent" href="https://www.lesmaisonsdupetitnicolas.be/fr/les-biens"><span>Nos biens</span></a><ul><li class="menudepth1 first_child"><a class="" href="https://www.lesmaisonsdupetitnicolas.be/fr/nos-biens/location"><span>Location</span></a></li><li class="menudepth1 last_child"><a class="" href="https://www.lesmaisonsdupetitnicolas.be/fr/nos-biens/vente"><span>Vente</span></a></li></ul></li><li class="menudepth0 last_child"><a class="" href="https://www.lesmaisonsdupetitnicolas.be/contact"><span>Contact</span></a></li></ul>
+
+                        </nav>
+                    </div>
+                    <div class="bt-header">
+                        <div class="inner bt-open-popup-sale-rent">
+                            Vendez mon bien
+                        </div>
+                    </div>
+                    <div class="bt-open-nav">
+                        <div class="inner">
+                            <i class="las la-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <section class="popup-sale-rent d-flex">
+        <div class="bg-content">
+                <div class="bg bg1"></div>
+                <div class="bg bg2"></div>
+                <div class="bg bg3"></div>
+                <div class="bg bg4"></div>
+        </div>
+        <div class="content p-20 p-md-40 d-flex align-items-center justify-content-center">
+                <div class="bg-close-popup-sale-rent"><i class="las la-times-circle"></i></div>
+
+                <div class="inner text-center" id="step-1">
+                        <h2>En quelques étapes,<br>complétez notre formulaire</h2>
+                        <button class="btn btn-xl btn-color-b bt-next-step-1">C'est parti</button>
+                        <div class="checkbox text-center mt-15 mt-md-30">
+                                <input type="checkbox" id="popup-gdpr-validation">
+                                <label for="popup-gdpr-validation">Accepter notre politique de confidentialité <br>avant de commencer.</label>
+                        </div>
+                </div>
+
+                <div class="inner text-center d-none" id="step-2">
+                        <h2>Souhaitez-vous<br>vendre ou louer ?</h2>
+                        <div class="row">
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-2-option-1">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-2-1.svg" alt="Je souhaite vendre">
+                                            </div>
+                                            <input name="option-step-2" type="radio" id="step-2-option-1" value="Je souhaite vendre" class="form-check-input option-1">
+                                            <span class="checkmark"></span>
+                                            <b>Je souhaite vendre</b>
+                                        </label>
+                                </div>
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-2-option-2">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-2-2.svg" alt="Je souhaite louer">
+                                            </div>
+                                            <input name="option-step-2" type="radio" id="step-2-option-2" value="Je souhaite louer" class="form-check-input option-2">
+                                            <span class="checkmark"></span>
+                                            <b>Je souhaite louer</b>
+                                        </label>
+                                </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center mt-10">
+                                <button class="btn btn-xl btn-color bt-back-step-2 mr-10">Retour</button>
+                                <button class="btn btn-xl btn-color-b bt-next-step-2 ml-10">Suivant</button>
+                        </div>
+                </div>
+
+                <div class="inner text-center d-none" id="step-3">
+                        <h2>Quand désirez-vous<br>vendre ?</h2>
+                        <div class="row">
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-3-option-1">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-3-1.svg" alt="Vendre tout de suite">
+                                            </div>
+                                            <input name="option-step-3" type="radio" id="step-3-option-1" value="Vendre tout de suite" class="form-check-input option-1">
+                                            <span class="checkmark"></span>
+                                            <b>Vendre tout de suite</b>
+                                        </label>
+                                </div>
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-3-option-2">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-3-2.svg" alt="Dans les 3 prochains mois">
+                                            </div>
+                                            <input name="option-step-3" type="radio" id="step-3-option-2" value="Dans les 3 prochains mois" class="form-check-input option-2">
+                                            <span class="checkmark"></span>
+                                            <b>Dans les 3 prochains mois</b>
+                                        </label>
+                                </div>
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-3-option-3">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-3-3.svg" alt="Dans plus de 4 mois">
+                                            </div>
+                                            <input name="option-step-3" type="radio" id="step-3-option-3" value="Dans plus de 4 mois" class="form-check-input option-3">
+                                            <span class="checkmark"></span>
+                                            <b>Dans plus de 4 mois</b>
+                                        </label>
+                                </div>
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-3-option-4">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-3-4.svg" alt="Le bien est déjà en vente">
+                                            </div>
+                                            <input name="option-step-3" type="radio" id="step-3-option-4" value="Le bien est déjà en vente" class="form-check-input option-4">
+                                            <span class="checkmark"></span>
+                                            <b>Le bien est déjà en vente</b>
+                                        </label>
+                                </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center mt-10">
+                                <button class="btn btn-xl btn-color bt-back-step-3 mr-10">Retour</button>
+                                <button class="btn btn-xl btn-color-b bt-next-step-3 ml-10">Suivant</button>
+                        </div>
+                </div>
+
+                <div class="inner text-center d-none" id="step-3-2">
+                        <h2>Quand désirez-vous<br>louer ?</h2>
+                        <div class="row">
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-3-2-option-1">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-3-1.svg" alt="Louer tout de suite">
+                                            </div>
+                                            <input name="option-step-3" type="radio" id="step-3-2-option-1" value="Louer tout de suite" class="form-check-input option-1">
+                                            <span class="checkmark"></span>
+                                            <b>Louer tout de suite</b>
+                                        </label>
+                                </div>
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-3-2-option-2">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-3-2.svg" alt="Dans les 3 prochains mois">
+                                            </div>
+                                            <input name="option-step-3" type="radio" id="step-3-2-option-2" value="Dans les 3 prochains mois" class="form-check-input option-2">
+                                            <span class="checkmark"></span>
+                                            <b>Dans les 3 prochains mois</b>
+                                        </label>
+                                </div>
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-3-2-option-3">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-3-3.svg" alt="Dans plus de 4 mois">
+                                            </div>
+                                            <input name="option-step-3" type="radio" id="step-3-2-option-3" value="Dans plus de 4 mois" class="form-check-input option-3">
+                                            <span class="checkmark"></span>
+                                            <b>Dans plus de 4 mois</b>
+                                        </label>
+                                </div>
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-3-2-option-4">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-3-4.svg" alt="Le bien est déjà en location">
+                                            </div>
+                                            <input name="option-step-3" type="radio" id="step-3-2-option-4" value="Le bien est déjà en location" class="form-check-input option-4">
+                                            <span class="checkmark"></span>
+                                            <b>Le bien est déjà en location</b>
+                                        </label>
+                                </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center mt-10">
+                                <button class="btn btn-xl btn-color bt-back-step-3-2 mr-10">Retour</button>
+                                <button class="btn btn-xl btn-color-b bt-next-step-3-2 ml-10">Suivant</button>
+                        </div>
+                </div>
+
+                <div class="inner text-center d-none" id="step-4">
+                        <h2>Quel type de bien vendez-vous ?</h2>
+                        <div class="row justify-content-center">
+                                <div class=" col-4 col-xl-3 mb-10 mb-xl-20">
+                                        <label class="radio-button radio-button-bloc" for="step-4-option-1">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-4-1.svg" alt="Maison">
+                                            </div>
+                                            <input name="option-step-4" type="radio" id="step-4-option-1" value="Maison" class="form-check-input option-1">
+                                            <span class="checkmark"></span>
+                                            <b>Maison</b>
+                                        </label>
+                                </div>
+                                <div class="col-4 col-xl-3 mb-10 mb-xl-20">
+                                        <label class="radio-button radio-button-bloc" for="step-4-option-2">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-4-2.svg" alt="Appartement">
+                                            </div>
+                                            <input name="option-step-4" type="radio" id="step-4-option-2" value="Appartement" class="form-check-input option-2">
+                                            <span class="checkmark"></span>
+                                            <b>Appartement</b>
+                                        </label>
+                                </div>
+                                <div class="col-4 col-xl-3 mb-10 mb-xl-20">
+                                        <label class="radio-button radio-button-bloc" for="step-4-option-3">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-4-3.svg" alt="Immeuble de rapport">
+                                            </div>
+                                            <input name="option-step-4" type="radio" id="step-4-option-3" value="Immeuble" class="form-check-input option-3">
+                                            <span class="checkmark"></span>
+                                            <b>Immeuble</b>
+                                        </label>
+                                </div>
+                                <div class="col-4 col-xl-3 mb-10 mb-xl-20">
+                                        <label class="radio-button radio-button-bloc" for="step-4-option-4">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-4-4.svg" alt="Bureau">
+                                            </div>
+                                            <input name="option-step-4" type="radio" id="step-4-option-4" value="Bureau" class="form-check-input option-4">
+                                            <span class="checkmark"></span>
+                                            <b>Bureau</b>
+                                        </label>
+                                </div>
+                                <div class="col-4 col-xl-3 mb-10 mb-xl-20">
+                                        <label class="radio-button radio-button-bloc" for="step-4-option-5">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-4-5.svg" alt="Terrain">
+                                            </div>
+                                            <input name="option-step-4" type="radio" id="step-4-option-5" value="Terrain" class="form-check-input option-5">
+                                            <span class="checkmark"></span>
+                                            <b>Terrain</b>
+                                        </label>
+                                </div>
+                                <div class="col-4 col-xl-3 mb-10 mb-xl-20">
+                                        <label class="radio-button radio-button-bloc" for="step-4-option-6">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-4-6.svg" alt="Commerce">
+                                            </div>
+                                            <input name="option-step-4" type="radio" id="step-4-option-6" value="Commerce" class="form-check-input option-6">
+                                            <span class="checkmark"></span>
+                                            <b>Commerce</b>
+                                        </label>
+                                </div>
+                                <div class="col-4 col-xl-3 mb-10 mb-xl-20">
+                                        <label class="radio-button radio-button-bloc" for="step-4-option-7">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-4-7.svg" alt="Industrie">
+                                            </div>
+                                            <input name="option-step-4" type="radio" id="step-4-option-7" value="Industrie" class="form-check-input option-7">
+                                            <span class="checkmark"></span>
+                                            <b>Industrie</b>
+                                        </label>
+                                </div>
+                                <div class="col-4 col-xl-3 mb-10 mb-xl-20">
+                                        <label class="radio-button radio-button-bloc" for="step-4-option-8">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-4-8.svg" alt="Garage">
+                                            </div>
+                                            <input name="option-step-4" type="radio" id="step-4-option-8" value="Garage" class="form-check-input option-8">
+                                            <span class="checkmark"></span>
+                                            <b>Garage</b>
+                                        </label>
+                                </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center mt-10">
+                                <button class="btn btn-xl btn-color bt-back-step-4 mr-10">Retour</button>
+                                <button class="btn btn-xl btn-color-b bt-next-step-4 ml-10">Suivant</button>
+                        </div>
+                </div>
+
+                <div class="inner text-center d-none" id="step-4-2">
+                        <h2>Quel type de bien louez-vous ?</h2>
+                        <div class="row justify-content-center">
+                                <div class="col-4 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-4-2-option-1">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-4-1.svg" alt="Maison">
+                                            </div>
+                                            <input name="option-step-4-2" type="radio" id="step-4-2-option-1" value="Maison" class="form-check-input option-1">
+                                            <span class="checkmark"></span>
+                                            <b>Maison</b>
+                                        </label>
+                                </div>
+                                <div class="col-4 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-4-2-option-2">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-4-2.svg" alt="Appartement">
+                                            </div>
+                                            <input name="option-step-4-2" type="radio" id="step-4-2-option-2" value="Appartement" class="form-check-input option-2">
+                                            <span class="checkmark"></span>
+                                            <b>Appartement</b>
+                                        </label>
+                                </div>
+                                <div class="col-4 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-4-2-option-3">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-4-3.svg" alt="Bureau">
+                                            </div>
+                                            <input name="option-step-4-2" type="radio" id="step-4-2-option-3" value="Bureau" class="form-check-input option-3">
+                                            <span class="checkmark"></span>
+                                            <b>Bureau</b>
+                                        </label>
+                                </div>
+                                <div class="col-4 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-4-2-option-4">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-4-4.svg" alt="Commerce">
+                                            </div>
+                                            <input name="option-step-4-2" type="radio" id="step-4-2-option-4" value="Commerce" class="form-check-input option-4">
+                                            <span class="checkmark"></span>
+                                            <b>Commerce</b>
+                                        </label>
+                                </div>
+                                <div class="col-4 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-4-2-option-5">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-4-5.svg" alt="Industrie">
+                                            </div>
+                                            <input name="option-step-4-2" type="radio" id="step-4-2-option-5" value="Industrie" class="form-check-input option-5">
+                                            <span class="checkmark"></span>
+                                            <b>Industrie</b>
+                                        </label>
+                                </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center mt-10">
+                                <button class="btn btn-xl btn-color bt-back-step-4-2 mr-10">Retour</button>
+                                <button class="btn btn-xl btn-color-b bt-next-step-4-2 ml-10">Suivant</button>
+                        </div>
+                </div>
+
+                <div class="inner text-center d-none" id="step-5">
+                        <h2>Quelle tranche<br>de prix visez-vous ?</h2>
+                        <div class="row justify-content-center">
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-5-option-1">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-5-1.svg" alt="">
+                                            </div>
+                                            <input name="option-step-5" type="radio" id="step-5-option-1" value="" class="form-check-input option-1">
+                                            <span class="checkmark"></span>
+                                            <b class="step-5-price-1"></b>
+                                        </label>
+                                </div>
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-5-option-2">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-5-2.svg" alt="">
+                                            </div>
+                                            <input name="option-step-5" type="radio" id="step-5-option-2" value="" class="form-check-input option-2">
+                                            <span class="checkmark"></span>
+                                            <b class="step-5-price-2"></b>
+                                        </label>
+                                </div>
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-5-option-3">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-5-3.svg" alt="">
+                                            </div>
+                                            <input name="option-step-5" type="radio" id="step-5-option-3" value="" class="form-check-input option-3">
+                                            <span class="checkmark"></span>
+                                            <b class="step-5-price-3"></b>
+                                        </label>
+                                </div>
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-5-option-4">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-5-4.svg" alt="">
+                                            </div>
+                                            <input name="option-step-5" type="radio" id="step-5-option-4" value="" class="form-check-input option-4">
+                                            <span class="checkmark"></span>
+                                            <b class="step-5-price-4"></b>
+                                        </label>
+                                </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center mt-10">
+                                <button class="btn btn-xl btn-color bt-back-step-5 mr-10">Retour</button>
+                                <button class="btn btn-xl btn-color-b bt-next-step-5 ml-10">Suivant</button>
+                        </div>
+                </div>
+
+                <div class="inner text-center d-none" id="step-5-2">
+                        <h2>Quelle tranche de prix souhaitez-vous pour le loyer de votre bien ?</h2>
+                        <div class="row justify-content-center">
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-5-2-option-1">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-5-1.svg" alt="">
+                                            </div>
+                                            <input name="option-step-5-2" type="radio" id="step-5-2-option-1" value="" class="form-check-input option-1">
+                                            <span class="checkmark"></span>
+                                            <b class="step-5-2-price-1"></b>
+                                        </label>
+                                </div>
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-5-2-option-2">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-5-2.svg" alt="">
+                                            </div>
+                                            <input name="option-step-5-2" type="radio" id="step-5-2-option-2" value="" class="form-check-input option-2">
+                                            <span class="checkmark"></span>
+                                            <b class="step-5-2-price-2"></b>
+                                        </label>
+                                </div>
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-5-2-option-3">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-5-3.svg" alt="">
+                                            </div>
+                                            <input name="option-step-5-2" type="radio" id="step-5-2-option-3" value="" class="form-check-input option-3">
+                                            <span class="checkmark"></span>
+                                            <b class="step-5-2-price-3"></b>
+                                        </label>
+                                </div>
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-5-2-option-4">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-5-4.svg" alt="">
+                                            </div>
+                                            <input name="option-step-5-2" type="radio" id="step-5-2-option-4" value="" class="form-check-input option-4">
+                                            <span class="checkmark"></span>
+                                            <b class="step-5-2-price-4"></b>
+                                        </label>
+                                </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center mt-10">
+                                <button class="btn btn-xl btn-color bt-back-step-5-2 mr-10">Retour</button>
+                                <button class="btn btn-xl btn-color-b bt-next-step-5-2 ml-10">Suivant</button>
+                        </div>
+                </div>
+
+                <div class="inner text-center d-none" id="step-6">
+                        <h2>Quel est l'élément le plus important pour vous dans le choix de votre agent ?</h2>
+                        <div class="row justify-content-center">
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-6-option-1">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-6-1.svg" alt="Il m'en obtient le meilleur prix">
+                                            </div>
+                                            <input name="option-step-6" type="radio" id="step-6-option-1" value="Il m'en obtient le meilleur prix" class="form-check-input option-1">
+                                            <span class="checkmark"></span>
+                                            <b>Il m'en obtient le meilleur prix</b>
+                                        </label>
+                                </div>
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-6-option-2">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-6-2.svg" alt="Il a la commission la plus basse">
+                                            </div>
+                                            <input name="option-step-6" type="radio" id="step-6-option-2" value="Il a la commission la plus basse" class="form-check-input option-2">
+                                            <span class="checkmark"></span>
+                                            <b>Il a la commission la plus basse</b>
+                                        </label>
+                                </div>
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-6-option-3">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-6-3.svg" alt="Il vend très rapidement">
+                                            </div>
+                                            <input name="option-step-6" type="radio" id="step-6-option-3" value="Il vend très rapidement" class="form-check-input option-3">
+                                            <span class="checkmark"></span>
+                                            <b>Il vend très rapidement</b>
+                                        </label>
+                                </div>
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-6-option-4">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-6-4.svg" alt="Il est très expérimenté">
+                                            </div>
+                                            <input name="option-step-6" type="radio" id="step-6-option-4" value="Il est très expérimenté" class="form-check-input option-4">
+                                            <span class="checkmark"></span>
+                                            <b>Il est très expérimenté</b>
+                                        </label>
+                                </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center mt-10">
+                                <button class="btn btn-xl btn-color bt-back-step-6 mr-10">Retour</button>
+                                <button class="btn btn-xl btn-color-b bt-next-step-6 ml-10">Suivant</button>
+                        </div>
+                </div>
+
+                <div class="inner text-center d-none" id="step-6-2">
+                        <h2>Quel est l'élément le plus important pour vous dans le choix de votre agent ?</h2>
+                        <div class="row justify-content-center">
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-6-2-option-1">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-6-1.svg" alt="Il me trouve les meilleurs locataires">
+                                            </div>
+                                            <input name="option-step-6-2" type="radio" id="step-6-2-option-1" value="Il me trouve les meilleurs locataires" class="form-check-input option-1">
+                                            <span class="checkmark"></span>
+                                            <b>Il me trouve les meilleurs locataires</b>
+                                        </label>
+                                </div>
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-6-2-option-2">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-6-2.svg" alt="Il a la commission la plus basse">
+                                            </div>
+                                            <input name="option-step-6-2" type="radio" id="step-6-2-option-2" value="Il a la commission la plus basse" class="form-check-input option-2">
+                                            <span class="checkmark"></span>
+                                            <b>Il a la commission la plus basse</b>
+                                        </label>
+                                </div>
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-6-2-option-3">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-6-3.svg" alt="Il loue très rapidement">
+                                            </div>
+                                            <input name="option-step-6-2" type="radio" id="step-6-2-option-3" value="Il loue très rapidement" class="form-check-input option-3">
+                                            <span class="checkmark"></span>
+                                            <b>Il loue très rapidement</b>
+                                        </label>
+                                </div>
+                                <div class="col-6 mb-20">
+                                        <label class="radio-button radio-button-bloc" for="step-6-2-option-4">
+                                            <div class="icon">
+                                                <img src="assets/css/img/step-6-4.svg" alt="Il est très expérimenté">
+                                            </div>
+                                            <input name="option-step-6-2" type="radio" id="step-6-2-option-4" value="Il est très expérimenté" class="form-check-input option-4">
+                                            <span class="checkmark"></span>
+                                            <b>Il est très expérimenté</b>
+                                        </label>
+                                </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center mt-10">
+                                <button class="btn btn-xl btn-color bt-back-step-6-2 mr-10">Retour</button>
+                                <button class="btn btn-xl btn-color-b bt-next-step-6-2 ml-10">Suivant</button>
+                        </div>
+                </div>
+
+                <div class="inner text-center d-none" id="step-7">
+                        <h2>Complétez<br>vos coordonnées</h2>
+                        
+                                <div class="row">
+                                        <div class="col-12">
+                                                <input type="text" id="" name="property_address" placeholder="Adresse du bien">
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                                <input type="text" id="" name="last_name" placeholder="Nom *">
+                                                <input type="text" id="" name="first_name" placeholder="Prénom">
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                                <input type="text" id="" name="email" placeholder="E-mail *">
+                                                <input type="text" id="" name="phone" placeholder="Téléphone">
+                                        </div>
+                                </div>
+                        <div class="d-flex align-items-center justify-content-center mt-10">
+                                <div class="btn btn-xl btn-color bt-back-step-7 mr-10">Retour</div>
+                                <button id="send-button" class="btn btn-xl btn-color-b bt-next-step-7 ml-10">Envoyer</button>
+                        </div>
+                        
+                </div>
+
+            <div class="inner text-center d-none" id="step-8">
+                    <h2>Demande envoyée</h2>
+                    <p>Votre demande a été envoyée avec succès !</p>
+                    <p>Nous vous contacterons dans les plus brefs délais.</p>
+                    <div class="d-flex align-items-center justify-content-center mt-30">
+                            <button class="btn btn-xl btn-color-b bt-next-step-8">Fermer</button>
+                    </div>
+    </div>
+</section>
+        
+        <!-- Top page -->
+    		<a href="#" class="top-scroll"><i class="la la-angle-up"></i></a>
+    	<!-- Top page end -->
+    </div>
+
+    <div class="popup-content">
+		<div class="container mw-100">
+			<div class="row">
+				<div class="col-12 col-lg-7 order-3 order-lg-1">
+					<div class="popup-form px-0">
+						<div class="step-content px-lg-15 py-40">
+							<div class="bloc-step step-sale p-sm-relative mw-100 mw-lg-90 mw-xl-70 m-auto content text-center" style="display: none;">
+								<h3 class="mb-40">Laissez-nous vos coordonnées et informations de votre bien et un de nos agents vous contactera dans les plus brefs délais.</h3>
+								<div class="form-content row">
+									
+
+<script type="text/javascript">
+function fbht(htid)
+	{
+		var fbhtc=document.getElementById(htid);
+		if (fbhtc)
+			{
+			if (fbhtc.style.display == 'none')
+				{
+				fbhtc.style.display = 'inline';
+				}
+			else
+				{
+				fbhtc.style.display = 'none';
+				}
+			}
+}
+</script>
+
+
+	
+	
+		
+	
+	<form id="cntnt01moduleform_1" method="post" action="https://www.lesmaisonsdupetitnicolas.be/" class="cms_form" enctype="multipart/form-data">
+<div class="hidden">
+<input type="hidden" name="mact" value="FormBuilder,cntnt01,default,0" />
+<input type="hidden" name="cntnt01returnid" value="48" />
+<input type="hidden" name="cntnt01fbrp_callcount" value="1" />
+</div>
+
+	<div><input type="hidden" id="cntnt01form_id" name="cntnt01form_id" value="5" />
+<input type="hidden" id="cntnt01fbrp_continue" name="cntnt01fbrp_continue" value="2" />
+<input type="hidden" id="cntnt01fbrp_done" name="cntnt01fbrp_done" value="1" />
+</div>
+	<div class="formbuilderform">
+							<div class="required col col-6"><label for="fbrp__50">Nom*</label><input type="text" name="cntnt01fbrp__50" value="" size="25" maxlength="80"  placeholder="..." required id="fbrp__50" />
+</div>								<div class="required col col-6"><label for="fbrp__51">Prénom*</label><input type="text" name="cntnt01fbrp__51" value="" size="25" maxlength="80"  placeholder="..." required id="fbrp__51" />
+</div>								<div class="required col col-6"><label for="fbrp__52">E-mail*</label><input type="email" name="cntnt01fbrp__52[]" value="" size="25" maxlength="128"  placeholder="..." required id="fbrp__52_1" />
+</div>								<div class="required col col-6"><label for="fbrp__53">Téléphone*</label><input type="text" name="cntnt01fbrp__53" value="" size="25" maxlength="80"  placeholder="..." required id="fbrp__53" />
+</div>								<div class="required col col-6"><label for="fbrp__54">Type de bien*</label><select class="cms_dropdown" name="cntnt01fbrp__54"  required id="fbrp__54"><option value="" selected="selected"> ...</option><option value="1">Maison</option><option value="2">Appartement</option><option value="3">Garage</option><option value="4">Terrain</option></select>
+</div>								<div class="required col col-6"><label for="fbrp__55">Vendre ou louer*</label><select class="cms_dropdown" name="cntnt01fbrp__55"  required id="fbrp__55"><option value="" selected="selected"> ...</option><option value="1">Vendre</option><option value="2">Louer</option></select>
+</div>								<div class="required col col-6"><label for="fbrp__56">Adresse du bien*</label><input type="text" name="cntnt01fbrp__56" value="" size="25" maxlength="80"  placeholder="..." required id="fbrp__56" />
+</div>								<div class="required col col-6"><label for="fbrp__57">Code postal*</label><input type="text" name="cntnt01fbrp__57" value="" size="25" maxlength="80"  placeholder="..." required id="fbrp__57" />
+</div>								<div class="required col col-6 check-gdpr"><input type="checkbox" class="cms_checkbox" name="cntnt01fbrp__58" value="t"  required id="fbrp__58" />
+&nbsp;<label for="fbrp__58">J'accepte votre politique de confidentialité.</label></div>						
+		<div class="submit"><input class="cms_submit fbsubmit" name="cntnt01fbrp_submit" id="cntnt01fbrp_submit" value="Envoyer" type="submit"  /></div>
+	</div>
+	</form>
+
+
+								</div>	
+							</div>
+							<div class="bloc-step step-buy p-sm-relative mw-100 mw-lg-90 mw-xl-70 m-auto content text-center" style="display: none;">
+								<h3 class="mb-40">Laissez-nous vos coordonnées et un de nos agents vous contactera dans les plus brefs délais.</h3>
+								<div class="form-content row">
+									
+
+<script type="text/javascript">
+function fbht(htid)
+	{
+		var fbhtc=document.getElementById(htid);
+		if (fbhtc)
+			{
+			if (fbhtc.style.display == 'none')
+				{
+				fbhtc.style.display = 'inline';
+				}
+			else
+				{
+				fbhtc.style.display = 'none';
+				}
+			}
+}
+</script>
+
+
+	
+	
+		
+	
+	<form id="cntnt01moduleform_2" method="post" action="https://www.lesmaisonsdupetitnicolas.be/" class="cms_form" enctype="multipart/form-data">
+<div class="hidden">
+<input type="hidden" name="mact" value="FormBuilder,cntnt01,default,0" />
+<input type="hidden" name="cntnt01returnid" value="48" />
+<input type="hidden" name="cntnt01fbrp_callcount" value="1" />
+</div>
+
+	<div><input type="hidden" id="cntnt01form_id" name="cntnt01form_id" value="6" />
+<input type="hidden" id="cntnt01fbrp_continue" name="cntnt01fbrp_continue" value="2" />
+<input type="hidden" id="cntnt01fbrp_done" name="cntnt01fbrp_done" value="1" />
+</div>
+	<div class="formbuilderform">
+							<div class="required col col-6"><label for="fbrp__62">Nom*</label><input type="text" name="cntnt01fbrp__62" value="" size="25" maxlength="80"  placeholder="..." required id="fbrp__62" />
+</div>								<div class="required col col-6"><label for="fbrp__63">Prénom*</label><input type="text" name="cntnt01fbrp__63" value="" size="25" maxlength="80"  placeholder="..." required id="fbrp__63" />
+</div>								<div class="required col col-6"><label for="fbrp__64">E-mail*</label><input type="email" name="cntnt01fbrp__64[]" value="" size="25" maxlength="128"  placeholder="..." required id="fbrp__64_1" />
+</div>								<div class="required col col-6"><label for="fbrp__65">Téléphone*</label><input type="text" name="cntnt01fbrp__65" value="" size="25" maxlength="80"  placeholder="..." required id="fbrp__65" />
+</div>								<div class="required col col-12"><label for="fbrp__66">Type de bien que vous recherchez*</label><select class="cms_dropdown" name="cntnt01fbrp__66"  required id="fbrp__66"><option value="" selected="selected"> ...</option><option value="1">Maison</option><option value="2">Appartement</option><option value="3">Garage</option><option value="4">Terrain</option></select>
+</div>								<div class="required col col-6 check-gdpr"><input type="checkbox" class="cms_checkbox" name="cntnt01fbrp__70" value="t"  required id="fbrp__70" />
+&nbsp;<label for="fbrp__70">J'accepte votre politique de confidentialité.</label></div>						
+		<div class="submit"><input class="cms_submit fbsubmit" name="cntnt01fbrp_submit" id="cntnt01fbrp_submit" value="Envoyer" type="submit"  /></div>
+	</div>
+	</form>
+
+
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-3 d-flex align-items-center px-0 order-1 order-lg-2" style="background: #3a3f46;">
+					<div class="popup-step-content d-flex d-lg-inline justify-content-center">
+						<div class="popup-step-link step-link-sale text-center text-lg-left active">
+							<div class="icon">
+								<img class="lazy" data-src="assets/css/img/deal.svg" alt=" ">
+							</div>
+							<p>Vendre ou mettre en location son bien</p>
+						</div>
+						<div class="popup-step-link step-link-buy text-center text-lg-left">
+							<div class="icon">
+								<img class="lazy" src="assets/css/img/buy.svg" alt=" ">
+							</div>
+							<p>Acheter ou louer un bien</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-2 pb-10 pb-xl-20 filter-fx d-inline-block d-lg-flex align-items-end flex-column order-2 order-lg-3 text-center text-sm-right">
+					<div class="popup-area-top color-w d-inline-block">
+						<div class="bt-close-popup mt-0 mt-lg-15 d-inline-block d-lg-flex align-items-center justify-content-end">
+							<p class="d-inline-block text-left text-lg-right">Revenir sur<br>le site</p><i class="las la-door-open"></i>
+						</div>
+					</div>
+					<div class="popup-area-bottom mt-auto d-inline-block">
+						<div class="bt-open-help d-inline-block d-lg-flex align-items-center justify-content-end">
+							<p class="d-inline-block text-right text-lg-right">Besoin<br>d'aide</p><i class="lar la-question-circle"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="help-content">
+				<div class="bt-close-help"><i class="las la-times-circle"></i></div>
+				<div class="inner">
+						<p>- Sélectionnez dans la colonne de droite si vous souhaitez acheter, vendre ou louer un bien immobilier.</p>
+						<p>- Complétez le formulaire se trouvant dans la colonne de gauche.</p>
+						<p>- Et un agent vous contactera dans les plus brefs délais.</p>
+				</div>
+			</div>
+		</div>
+	</div> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Bootstrap js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+</script>
+
+<script src="main.js"></script>
+</body>
+</html>

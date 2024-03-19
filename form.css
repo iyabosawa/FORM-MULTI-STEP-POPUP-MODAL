@@ -1,0 +1,141 @@
+.d-flex-right{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.d-flex-right button{
+    border: 2px solid gray;
+    padding: 10px;
+}
+
+
+
+.inner h2{
+    font-size: 34px;
+    line-height: 48px;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 30px;
+}
+
+.btn-xl{
+    padding: 10px 50px;
+    font-size: 20px;
+}
+
+.btn{
+    border-radius: none!important;
+}
+
+.btn-color{
+    background: rgb(255, 91, 91);
+    color: white;
+}
+
+.btn-color-b{
+    background: red;
+    color: #fff;
+    border-radius: none!important;
+}
+
+.d-flex-check{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 30px;
+}
+.d-flex-check label{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+
+#popup-gdpr-validation{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.error-red{
+    color: red!important;
+}
+
+.error-border-red{
+    border: 2px solid red!important;
+}
+
+.margin-right{
+    margin-right: 5px;
+}
+
+.margin-left{
+    margin-left: 5px;
+}
+
+.radio-button.radio-button-bloc{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(206, 206, 206);
+    opacity: 1;
+    transition: .2s;
+    padding: 20px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms ease;
+}
+
+
+.radio-button.radio-button-bloc input[type="radio"] {
+    display: none;
+}
+
+.radio-button.radio-button-bloc b{
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.radio-button-bloc .icon{
+    height: 50px;
+    width: 50px;
+}
+
+.radio-button-bloc .icon svg{
+    fill: red;
+}
+
+.row-display{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 50px;
+}
+
+input:checked + .radio-button-bloc {
+    background: red;
+    box-shadow: 0 0 12px red;
+}
+
+label.radio-button.radio-button-bloc.check {
+    background: red;
+    -webkit-box-shadow: 0 0 12px red;
+    box-shadow: 0 0 12px red;
+    border: none!important;
+}
+
+label.radio-button.radio-button-bloc.check svg{
+    fill: white;
+}
+
+label.radio-button.radio-button-bloc.check B{
+    color: white;
+}
+.col-bottom{
+    margin-bottom: 20px;
+}
+
